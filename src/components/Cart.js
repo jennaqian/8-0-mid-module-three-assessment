@@ -8,7 +8,7 @@ class Cart extends Component {
 
     render() {
         return (
-            <div>
+            <div className="cart">
                 <h2>Cart</h2>
                 <ul></ul>
                 <h3>Subtotal: ${}</h3>

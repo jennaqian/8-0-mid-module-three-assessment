@@ -1,22 +1,23 @@
 import React from "react"
+import formatPrice from "../helpers/formatPrice"
 
 const ProductsList = ({productData}) => {
-    console.log(productData)
+    // console.log(productData)
     let individualProduct = productData.map(product => {
         return (
-        <li>
-            <p>Name: {product.name}</p>
-            <p>Price: $ {product.price}</p>
-            <button>Add To Cart</button>
+        <li className="list-item">
+            <h3>{product.name}</h3>
+            <p>Price: {formatPrice(product.price)}</p>
+            <button type="submit">Add To Cart</button>
             <img src={product.img}/>
             <p>{product.description}</p>
         </li>
         )
     })
     return (
-        <div>
+        <div className="products-list">
             <h2>My Garage Sale</h2>
-            <ul>
+            <ul className="products">
                 {individualProduct}
             </ul>
         </div>

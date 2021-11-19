@@ -1,1 +1,33 @@
+.products-container {
+    display: grid;
+    grid-template-areas: 
+    "productsList cart"
+    "productsList form";
+}
 
+.products-list {
+    grid-area: productsList;
+    padding: 5px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+}
+.list-item {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.list-item button {
+    width: 88px;
+}
+.list-item img {
+    width: 150px;
+}
+
+.form {
+    grid-area: form;
+}
+.cart {
+    grid-area: cart;
+}
