@@ -1,7 +1,22 @@
 import "./App.css";
+import { Component } from "react";
 
-const App = () => {
-  return <h1>Hello, world!</h1>;
-};
+class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+}
 
 export default App;
