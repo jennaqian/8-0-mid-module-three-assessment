@@ -19,7 +19,7 @@ class Form extends Component {
         return (
             <div>
                 <h2>Checkout</h2>
-                <form onSubmit={this.handleFormSubmit}>
+                <form id="checkout" onSubmit={this.handleFormSubmit} >
                     <label htmlFor="first-name">First Name</label>
                     <input type="text" id="first-name"></input>
                     <br />
