@@ -1,8 +1,8 @@
 import { Component } from "react";
 
 class Form extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       firstName: "",
@@ -31,7 +31,7 @@ class Form extends Component {
     } else if (zipCode.length !== 5) {
       window.alert("Zip code is not valid");
     } else {
-      window("Purchase Complete! You will be charged $73.49");
+      window.alert(`Purchase complete You will be charged ${this.props.total}`);
     }
   };
 
